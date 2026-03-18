@@ -30,7 +30,7 @@ const itemVariants = {
 
 export default function Skills() {
   return (
-    <section id="skills" className="py-24 px-6 bg-white border-y border-slate-100">
+    <section id="skills" className="py-16 sm:py-24 px-4 sm:px-6 bg-white border-y border-slate-100">
       <motion.div 
         variants={containerVariants}
         initial="hidden"
@@ -40,18 +40,18 @@ export default function Skills() {
       >
         <motion.h2 
           variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }} 
-          className="section-heading text-4xl mb-6 text-center text-slate-900"
+          className="section-heading text-3xl sm:text-4xl mb-6 text-center text-slate-900"
         >
           Teaching Skills
         </motion.h2>
         <motion.p 
           variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }} 
-          className="text-slate-500 text-center max-w-2xl mx-auto mb-16 text-lg font-medium"
+          className="text-slate-500 text-center max-w-2xl mx-auto mb-10 sm:mb-16 text-base sm:text-lg font-medium"
         >
           Core competencies developed through years of classroom experience and continuous professional development.
         </motion.p>
 
-        <div className="flex flex-wrap justify-center gap-4">
+        <div className="flex flex-wrap justify-center gap-2.5 sm:gap-4">
           {skills.map((skill) => (
             <motion.div
               key={skill}

@@ -16,12 +16,12 @@ export default function Hero() {
   };
 
   return (
-    <section className="min-h-screen relative flex items-center justify-center pt-24 pb-16 overflow-hidden bg-slate-50">
+    <section className="min-h-screen relative flex items-center justify-center pt-20 sm:pt-24 pb-12 sm:pb-16 overflow-hidden bg-slate-50">
       {/* Dynamic Background Elements */}
       <div className="absolute top-0 right-0 w-full h-[80vh] bg-gradient-to-b from-indigo-100/40 via-purple-50/20 to-transparent pointer-events-none -z-10 blur-3xl rounded-full translate-x-1/3 -translate-y-1/4 mix-blend-multiply"></div>
       <div className="absolute bottom-0 left-0 w-3/4 h-[50vh] bg-gradient-to-t from-rose-50/30 via-indigo-50/20 to-transparent pointer-events-none -z-10 blur-3xl rounded-full -translate-x-1/4 translate-y-1/4 mix-blend-multiply"></div>
       
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-12 items-center w-full">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center w-full">
         {/* Text Content */}
         <motion.div
           variants={containerVariants}
@@ -39,7 +39,7 @@ export default function Hero() {
           
           <motion.h1
             variants={itemVariants}
-            className="text-[3.5rem] sm:text-6xl lg:text-[5.5rem] xl:text-8xl font-black tracking-tight text-slate-900 leading-[0.95] mb-8 drop-shadow-sm"
+            className="text-[2.75rem] sm:text-6xl lg:text-[5.5rem] xl:text-8xl font-black tracking-tight text-slate-900 leading-[0.95] mb-6 sm:mb-8 drop-shadow-sm"
             style={{ fontFamily: 'var(--font-name)' }}
           >
             Meralyn<br />
@@ -96,11 +96,18 @@ export default function Hero() {
             
             {/* Main Image Container */}
             <div className="absolute inset-0 rounded-[2rem] overflow-hidden shadow-2xl ring-1 ring-black/5 bg-slate-100 !aspect-[3/4]">
-              <img 
-                src="/meralyn-img.jpg" 
-                alt="Meralyn Matundo" 
-                className="w-full h-full object-cover origin-center transition-transform duration-700 ease-out group-hover:scale-105"
-              />
+              <picture>
+                <source srcSet="/meralyn-img.webp" type="image/webp" />
+                <img
+                  src="/meralyn-img.jpg"
+                  alt="Meralyn Matundo — Elementary School Teacher"
+                  width={448}
+                  height={597}
+                  loading="eager"
+                  fetchPriority="high"
+                  className="w-full h-full object-cover origin-center transition-transform duration-700 ease-out group-hover:scale-105"
+                />
+              </picture>
             </div>
           </div>
         </motion.div>

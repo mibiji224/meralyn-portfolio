@@ -35,7 +35,7 @@ const itemVariants = {
 
 export default function About() {
   return (
-    <section id="about" className="py-24 px-6 bg-white overflow-hidden">
+    <section id="about" className="py-16 sm:py-24 px-4 sm:px-6 bg-white overflow-hidden">
       <motion.div 
         variants={containerVariants}
         initial="hidden"
@@ -43,16 +43,16 @@ export default function About() {
         viewport={{ once: true, margin: "-100px" }}
         className="max-w-5xl mx-auto"
       >
-        <motion.h2 variants={itemVariants} className="section-heading text-4xl mb-6 text-center text-slate-900">
+        <motion.h2 variants={itemVariants} className="section-heading text-3xl sm:text-4xl mb-6 text-center text-slate-900">
           About Me
         </motion.h2>
-        <motion.p variants={itemVariants} className="text-slate-500 text-center max-w-2xl mx-auto mb-16 text-lg font-medium">
+        <motion.p variants={itemVariants} className="text-slate-500 text-center max-w-2xl mx-auto mb-10 sm:mb-16 text-base sm:text-lg font-medium">
           A dedicated elementary school teacher serving in the public school system of Bislig City, Philippines.
         </motion.p>
 
         <div className="grid lg:grid-cols-12 gap-12 lg:gap-8">
           <motion.div variants={itemVariants} className="lg:col-span-7 bg-slate-50 rounded-[2rem] p-8 sm:p-10 hover:shadow-lg transition-shadow">
-            <div className="space-y-6 text-slate-600 leading-relaxed mb-10 text-lg">
+            <div className="space-y-4 sm:space-y-6 text-slate-600 leading-relaxed mb-8 sm:mb-10 text-base sm:text-lg">
               <p>
                 I am a dedicated elementary school teacher currently serving in
                 the public school system of Bislig City, Surigao del Sur,

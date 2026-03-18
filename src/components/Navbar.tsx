@@ -30,9 +30,11 @@ export default function Navbar() {
             {l.label}
           </a>
         ))}
-        <Button size="sm" className="ml-3">
-          Hire Me
-        </Button>
+        <a href="#contact">
+          <Button size="sm" className="ml-3">
+            Contact Me
+          </Button>
+        </a>
       </div>
 
       <button

@@ -24,7 +24,7 @@ const itemVariants = {
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-24 px-6 bg-slate-50 border-t border-slate-100 relative overflow-hidden">
+    <section id="contact" className="py-16 sm:py-24 px-4 sm:px-6 bg-slate-50 border-t border-slate-100 relative overflow-hidden">
       {/* Decorative Background */}
       <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-indigo-50/50 rounded-full blur-[80px] -translate-y-1/2 -translate-x-1/2 pointer-events-none"></div>
 
@@ -35,7 +35,7 @@ export default function Contact() {
         viewport={{ once: true, margin: "-100px" }}
         className="max-w-5xl mx-auto relative z-10"
       >
-        <motion.h2 variants={itemVariants} className="section-heading text-4xl mb-16 text-center text-slate-900">
+        <motion.h2 variants={itemVariants} className="section-heading text-3xl sm:text-4xl mb-10 sm:mb-16 text-center text-slate-900">
           Contact Me
         </motion.h2>
 

@@ -33,7 +33,7 @@ const itemVariants = {
 
 export default function Education() {
   return (
-    <section id="education" className="py-24 px-6 bg-slate-50 relative overflow-hidden">
+    <section id="education" className="py-16 sm:py-24 px-4 sm:px-6 bg-slate-50 relative overflow-hidden">
       {/* Decorative background element */}
       <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-indigo-50/50 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
 
@@ -44,7 +44,7 @@ export default function Education() {
         viewport={{ once: true, margin: "-100px" }}
         className="max-w-4xl mx-auto relative z-10"
       >
-        <motion.h2 variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }} className="section-heading text-4xl mb-16 text-center text-slate-900">
+        <motion.h2 variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }} className="section-heading text-3xl sm:text-4xl mb-10 sm:mb-16 text-center text-slate-900">
           Education
         </motion.h2>
 

@@ -37,7 +37,7 @@ const itemVariants = {
 
 export default function ProfessionalDevelopment() {
   return (
-    <section className="py-24 px-6 bg-white border-t border-slate-100">
+    <section className="py-16 sm:py-24 px-4 sm:px-6 bg-white border-t border-slate-100">
       <motion.div 
         variants={containerVariants}
         initial="hidden"
@@ -45,7 +45,7 @@ export default function ProfessionalDevelopment() {
         viewport={{ once: true, margin: "-100px" }}
         className="max-w-6xl mx-auto"
       >
-        <motion.h2 variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }} className="section-heading text-4xl mb-16 text-center text-slate-900">
+        <motion.h2 variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }} className="section-heading text-3xl sm:text-4xl mb-10 sm:mb-16 text-center text-slate-900">
           Professional Development
         </motion.h2>
 

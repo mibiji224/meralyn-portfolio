@@ -175,7 +175,7 @@ export default function Portfolio() {
   };
 
   return (
-    <section id="portfolio" className="py-24 px-6 bg-white border-y border-slate-100">
+    <section id="portfolio" className="py-16 sm:py-24 px-4 sm:px-6 bg-white border-y border-slate-100">
       <motion.div
         variants={containerVariants}
         initial="hidden"
@@ -185,13 +185,13 @@ export default function Portfolio() {
       >
         <motion.h2
           variants={itemVariants}
-          className="section-heading text-4xl mb-6 text-center text-slate-900"
+          className="section-heading text-3xl sm:text-4xl mb-6 text-center text-slate-900"
         >
           Teaching Portfolio
         </motion.h2>
         <motion.p
           variants={itemVariants}
-          className="text-slate-500 text-center max-w-2xl mx-auto mb-16 text-lg font-medium"
+          className="text-slate-500 text-center max-w-2xl mx-auto mb-10 sm:mb-16 text-base sm:text-lg font-medium"
         >
           A collection of teaching materials, lesson plans, and educational
           resources I have developed throughout my career.

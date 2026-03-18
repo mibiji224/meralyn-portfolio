@@ -33,7 +33,7 @@ const itemVariants = {
 
 export default function Credentials() {
   return (
-    <section className="py-24 px-6 bg-slate-50 border-t border-slate-100">
+    <section className="py-16 sm:py-24 px-4 sm:px-6 bg-slate-50 border-t border-slate-100">
       <motion.div 
         variants={containerVariants}
         initial="hidden"
@@ -41,7 +41,7 @@ export default function Credentials() {
         viewport={{ once: true, margin: "-100px" }}
         className="max-w-5xl mx-auto"
       >
-        <motion.h2 variants={itemVariants} className="section-heading text-4xl mb-16 text-center text-slate-900">
+        <motion.h2 variants={itemVariants} className="section-heading text-3xl sm:text-4xl mb-10 sm:mb-16 text-center text-slate-900">
           Credentials
         </motion.h2>
 
